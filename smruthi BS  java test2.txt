@@ -1,0 +1,122 @@
+package practice;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class MaxMin {
+public Interger max(
+    public static void main(String args[])
+    {
+        // Creating arraylist
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+  
+        // Adding object in arraylist
+        arr.add(45);
+        arr.add(333);
+        arr.add(76);
+        arr.add(29);
+        arr.add(900);
+        arr.add(23);
+        arr.add(474);
+        arr.add(654);
+        arr.add(29);
+        arr.add(454);
+        
+        
+  
+        int n = arr.size();
+  
+        
+        System.out.println("ArrayList elements are :");
+  
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr.get(i) + " ");
+        }
+  
+        System.out.println();
+  
+       
+        int max = Collections.max(arr);
+        System.out.println("Maximum is : " + max);//maximum
+  
+        int min = Collections.min(arr);
+        System.out.println("Minimum is : " + min);//minimum
+    }
+}
+4a 
+a class cannot be inherited if we make the class final.
+we cannot make any changes to the final class therefor it cannot be inherited.
+4b 
+String
+
+6
+arraylist internally uses arrays
+linkedlist uses nodes
+arraylist does not store the address of previous element and next element
+linkedlist has the reference to the previous and next element
+manipulation is slower in arraylist.
+manipulation is faster in linked list.
+linkedlist has methods addHead() addTail() removeHead() and removeTail()
+ArrayList does not have  methods addHead() addTail() removeHead() and removeTail()
+we can add or remove first or last element in linkedlist
+we cannot add elements in desrired location in array list we can add elements only at the begining
+declartion of arraylist: 
+ArrayList<Integer> arr = new ArrayList<Integer>();
+declartion of linkedlist:
+LinkedList<Integer>list=new LinkedList<Integer>();
+
+7
+listIterator() is present in list inferace 
+Iterator() is present in both list and set
+In listIterator() iteration can be done in both forword and backword direction
+In iterator iteration happen only in forword direction
+package of listIterator is java.util.AbstractList.listIterator()
+listIterator returns listIterator
+package of Iterator is java.util.ArrayList.iterator()
+Iterator returns an iterator
+5 
+sortedset
+treeset are the sorted collections
+10
+static is compile time polymorphism
+it is called overloading
+methods and constructors can be overloaded in java.
+overloading means two or more methods with same name but differ in parameter type,order or number
+example for overloading
+public Amazon() {
+	
+}
+	public Amazon(String product, int productNo, int batchNo, String productType, double price, String[] customers,String[] address,
+			String[] payment, String[] colours, String[] brand, int[] quantity) {
+		this.product = product;
+		this.productNo = productNo;
+		this.batchNo = batchNo;
+		this.productType = productType;
+		this.price = price;
+		this.customers = customers;
+		this.address = address;
+		this.payment = payment;
+		this.colours = colours;
+		this.brand = brand;
+		this.quantity = quantity;
+
+	}
+	dynamic polymorphism is method overriding
+	child class provides implimentation to the method inherited from parent class is called method overriding.
+	constructor cannot be inherited
+	
+11
+security can be provide by encapsulation.
+the property is made private and acces is given by setter and getter method.
+s	
+
+
+
+
+
+
+
+
+
+
+
