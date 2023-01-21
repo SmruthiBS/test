@@ -1,0 +1,93 @@
+be collection types hirechcy.what are the main interfaces.what are diffrence between them
+iterable is the supermost interfaces
+collection  extends iterable
+collect has sub  4 interfaces
+list set queue sorted set
+set is implimenentwd by two classes hashset and linked hash set 
+list is implimented by two classes arraylist and linkedlist
+sorted set and queue is implimented by treeset
+set has hashset and linked hashset
+set does not allow duplicates
+set has only iterator and no other iterator
+list has arraylist and linked list
+list allow duplicates
+list has list iterator
+
+
+3 diff between hashset and treeset
+hashset allows null value
+treeset does not allow null
+hashset uses hashtable
+tree set uses tree structure
+hashset does not maintain order
+tree set maintain order
+
+ 10 Dependency Injection in Java is a way to achieve Inversion of control (IoC) in the application by moving objects 
+binding from compile time to runtime.
+We can achieve IoC through Factory Pattern,Template Method Design Pattern, Strategy Pattern and 
+Service Locator pattern.
+8
+jioning string
+spliting string
+converting string to map
+
+2
+map
+hashmap
+linkedhash map
+sorted map
+treemap
+11
+@componentscan used to find bean
+@Autowired annotatiion is used to inject bean in spring
+
+12
+@component is used to manage object by spring
+we add @component above the class spring we create bean for that class
+@componentscan is used to scan for the beans in the given package
+
+  16
+  package com.xworkz.test1;
+
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class Country {
+	public static void main(String[] args) {
+		Map<String, Integer> map=new TreeMap<String, Integer>();
+		map.put("austrila", 91);
+		map.put("brezil", 32);
+		map.put("canada", 13);
+		map.put("china", 42);
+		map.put("denmark", 52);
+		
+		Set<Entry<String, Integer>> entry= map.entrySet();
+		entry.forEach(element->System.out.println(element));
+		
+		map.forEach((key,value)->{if(value==52) {System.out.println(key);}});
+			
+		Iterator<Entry<String, Integer>> itr=entry.iterator();
+		while(itr.hasNext()) {
+			Entry<String, Integer> ent= itr.next();
+			if(ent.getValue()==42) {
+				itr.remove();
+				for (Entry<String, Integer> entry2 : entry) {
+					System.out.println(entry2);
+				}
+			}
+		}
+		
+		
+	}
+}
+
+17
+maven is database which contains jar files of diffrent tools.
+we have convert our java project to maven and add dependency of the jar file we want
+it will downloadin our local and we can use it in our project
+
+
+
